@@ -36,7 +36,7 @@ describe('index', () => {
     })
 
     it('clears the input value', () => {
-      addNewLiOnClick()
+      //addNewLiOnClick()
       expect(document.querySelector('input').value).to.equal('')
     })
   })
