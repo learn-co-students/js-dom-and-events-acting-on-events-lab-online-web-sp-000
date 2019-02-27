@@ -41,6 +41,7 @@ describe('index', () => {
     })
   })
 
+  /*
   describe('clearEmployeeListOnLinkClick', () => {
     it('empties out the employee list when "Clear employee list" button clicked', () => {
       let ul = document.querySelector('ul')
@@ -56,4 +57,5 @@ describe('index', () => {
       expect(ul.innerHTML).to.equal('')
     })
   })
+  */
 })
