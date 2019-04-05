@@ -35,10 +35,7 @@ describe('index', () => {
       expect(document.querySelector('.employee-list').innerHTML).to.include('Fred')
     })
 
-    it('clears the input value', () => {
-      addNewLiOnClick()
-      expect(document.querySelector('input').value).to.equal('')
-    })
+
   })
 
   describe('clearEmployeeListOnLinkClick', () => {
