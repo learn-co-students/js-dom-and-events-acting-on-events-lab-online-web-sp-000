@@ -9,24 +9,24 @@ preventRefreshOnSubmit()
 
 function retrieveEmployeeInformation(){
   return document.querySelector('input').value;
-  // There are two "input"s in the html file. With no specificity, this refers to the first one.
+  
 }
 
 
 function addNewElementAsLi() {
   let employeeName = retrieveEmployeeInformation();
   let ul = document.querySelector('.employee-list');
-  for (let i = 0; i < 1; i++) {
+  
     let li = document.createElement('li');
-    li.innerHTML = (i + 1).toString()+employeeName;
-    ul.appendChild(li);
-  }
+    li.innerHTML = employeeName;
+    ul.append(li);
+    // ul.appendChild(li);
 }
 
 
 function addNewLiOnClick() {
   let submit = document.querySelector('input[type="submit"]');
-  submit.addEventListener('click', function(event) {addNewElementAsLi();
+  submit.addEventListener('click', (event) => {addNewElementAsLi();
   document.querySelector('input').value=''
   })
 }
