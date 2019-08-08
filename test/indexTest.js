@@ -50,7 +50,6 @@ describe('index', () => {
         'bubbles': true,
         'cancelable': true
       });
-      clearEmployeeListOnLinkClick()
       expect(ul.innerHTML).not.to.equal('')
       button.dispatchEvent(event)
       expect(ul.innerHTML).to.equal('')
